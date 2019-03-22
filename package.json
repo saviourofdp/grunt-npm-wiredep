@@ -12,9 +12,10 @@
     "gruntplugin",
     "html",
     "grunt",
-    "bower",
+    "npm",
     "package",
     "wiredep",
+    "npm-wiredep",
     "dependency",
     "component",
     "postinstall"
@@ -34,6 +35,6 @@
     "grunt": ">=0.4.0"
   },
   "dependencies": {
-    "wiredep": "^4.0.0"
+    "npm-wiredep": "^0.0.4"
   }
 }
