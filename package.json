@@ -1,13 +1,8 @@
 {
-  "name": "grunt-wiredep",
-  "description": "Inject your Bower dependencies right into your HTML from Grunt.",
-  "version": "3.0.1",
-  "homepage": "http://stephenplusplus.github.io/grunt-wiredep",
-  "author": {
-    "name": "Stephen Sawchuk",
-    "email": "sawchuk@gmail.com",
-    "url": "http://github.com/stephenplusplus"
-  },
+  "name": "grunt-npm-wiredep",
+  "description": "Inject your NPM dependencies right into your HTML from Grunt.",
+  "version": "1.0.0",
+  "homepage": "https://github.com/saviourofdp/grunt-npm-wiredep",
   "keywords": [
     "gruntplugin",
     "html",
@@ -20,11 +15,10 @@
     "component",
     "postinstall"
   ],
-  "repository": "stephenplusplus/grunt-wiredep",
+  "repository": "saviourofdp/grunt-npm-wiredep",
   "licenses": [
     {
-      "type": "MIT",
-      "url": "https://github.com/stephenplusplus/grunt-wiredep/blob/master/LICENSE-MIT"
+      "type": "MIT"
     }
   ],
   "engines": {
