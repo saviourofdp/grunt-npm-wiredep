@@ -1,21 +1,16 @@
-> -
 # grunt-wiredep
 *Inject Bower packages into your source code with Grunt.*
->
-> -
 
 ## What is this?
 [Grunt](http://gruntjs.com) is great.
 
-[Bower](http://bower.io) is great.
+NPM is great.
 
 **And now they work great together.**
 
-`grunt-wiredep` is a Grunt plug-in, which finds your components and injects them directly into the HTML file you specify.
+`grunt-npm-wiredep` is a Grunt plug-in, which finds your components and injects them directly into the HTML file you specify.
 
-Whether you're already using Bower and Grunt, or new to both, `grunt-wiredep` will be easy to plug in, as you will see in the steps below.
-
-_**do note**: Bower is still a young little birdy, so things are changing rapidly. Authors of Bower components must follow certain conventions and best practices in order for this plug-in to be as accurate as possible. It's not a perfect world out there, so needless to say, some Bower components may not work as well as others._
+Whether you're already using NPM and Grunt, or new to both, `grunt-npm-wiredep` will be easy to plug in, as you will see in the steps below.
 
 ## Getting Started
 
@@ -23,17 +18,17 @@ _**do note**: Bower is still a young little birdy, so things are changing rapidl
 
 To install the module:
 ```
-npm install --save-dev grunt-wiredep
+npm install --save-dev grunt-npm-wiredep
 ```
 
 Include the task in your Gruntfile:
 ```js
-grunt.loadNpmTasks('grunt-wiredep');
+grunt.loadNpmTasks('grunt-npm-wiredep');
 ```
 
 Create a config block within your Gruntfile:
 ```js
-wiredep: {
+"npm-wiredep": {
 
   task: {
 
@@ -62,31 +57,31 @@ Options can be specified on both task and target level. See [grunt documentation
 
 For JavaScript dependencies, pop this in your HTML file:
 ```html
-<!-- bower:js -->
-<!-- endbower -->
+<!-- npm:js -->
+<!-- endnpm -->
 ```
 
-Install a Bower component:
+Install an NPM component:
 ```
-bower install jquery --save
+npm install jquery --save
 ```
 
 Call the Grunt task:
 ```
-grunt wiredep
+grunt npm-wiredep
 ```
 
 You're in business!
 ```html
-<!-- bower:js -->
+<!-- npm:js -->
 <script src="bower_components/jquery/jquery.js"></script>
-<!-- endbower -->
+<!-- endnpm -->
 ```
 
 ## Behind the Scenes
-This plug-in uses [wiredep](https://github.com/stephenplusplus/wiredep), which takes a look at all of the components you have, then determines the best order to inject your scripts in to your HTML file.
+This plug-in uses [npm-wiredep](https://github.com/viscomd/npm-wiredep), which takes a look at all of the components you have, then determines the best order to inject your scripts in to your HTML file.
 
-Putting script tags that aren't managed by `grunt-wiredep` is not advised, as anything between `<!-- bower:js -->` and `<!-- endbower -->` will be overwritten with each command.
+Putting script tags that aren't managed by `grunt-npm-wiredep` is not advised, as anything between `<!-- npm:js -->` and `<!-- endnpm -->` will be overwritten with each command.
 
 ## Examples
 A simple sample apple:
