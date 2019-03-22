@@ -1,5 +1,5 @@
 # grunt-wiredep
-*Inject Bower packages into your source code with Grunt.*
+*Inject NPM packages into your source code with Grunt.*
 
 ## What is this?
 [Grunt](http://gruntjs.com) is great.
